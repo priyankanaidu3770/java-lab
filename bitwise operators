@@ -1,0 +1,18 @@
+import java.util.*;
+class Bitwise 
+{
+public static void main(String args[])
+{
+int a,b;
+Scanner sc=new Scanner(System.in);
+System.out.println("enter the values of a,b,= ");
+a=sc.nextInt();
+b=sc.nextInt();
+System.out.println("bitwise OR: "+(a|b));
+System.out.println("bitwise AND: "+(a&b));
+System.out.println("bitwise xOR: "+(a^b));
+System.out.println("complement of a: "+(~a));
+System.out.println("leftshift of a: "+(a<<1));
+System.out.println("rightshift of a: "+(a>>1));
+}
+}
