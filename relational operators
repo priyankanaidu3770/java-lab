@@ -1,0 +1,15 @@
+import java.util.*;
+class Relational
+{
+public static void main(String args[])
+{
+int a=5;
+int b=10;
+System.out.println("a greter than b: "+(a>b));
+System.out.println("a less than b: "+(a<b));
+System.out.println("a greter than or equal to b: "+(a>=b));
+System.out.println("a less than or equal to b: "+(a<=b));
+System.out.println("a equal to b: "+(a=b));
+System.out.println("a not equal to b: "+(a!=b));
+}
+}
