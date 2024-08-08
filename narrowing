@@ -1,0 +1,13 @@
+import java.util.*;
+class Nar
+{
+public static void main(String args[])
+{
+ double d=10.98;
+ System.out.println("double value is "+d);
+ int a= (int)d;
+ System.out.println("int value is "+a);
+ byte b=(byte)a;
+ System.out.println("byte value is "+b);
+}
+}
