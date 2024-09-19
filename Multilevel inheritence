@@ -1,0 +1,36 @@
+import java.util.*;
+class A{
+    public void methodA()
+    {
+       System.out.println("parent class");
+       }
+    }
+ class B extends A
+ {
+     public void methodB()
+     {
+     System.out.println("child class");
+     }
+     }
+ class C extends B
+ {
+ public void methodC()
+ {
+ System.out.println("child class 2");    
+  }
+     public static void main(String args[])
+     {
+      C obj = new C();
+      obj.methodA();
+      obj.methodB();
+      obj.methodC();
+      }
+      }
+
+
+output:
+parent class
+child class
+child class 2
+
+        
