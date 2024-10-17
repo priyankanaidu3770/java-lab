@@ -1,0 +1,24 @@
+import java.lang.*;
+class Multiplecatch
+{
+public static void main(String args[])
+{
+try
+{
+int a[]=new int[5];
+System.out.println(a[10]);
+}
+catch(ArithmeticException ae)
+{
+System.out.println("Arithimetic Exception");
+}
+catch(ArrayIndexOutOfBoundsException aeb)
+{
+System.out.println("Out of bounds exception");
+}
+catch(Exception e)
+{
+System.out.println(e);
+}
+}
+}
