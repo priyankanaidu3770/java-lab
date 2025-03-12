@@ -1,0 +1,77 @@
+import java.util.*;
+
+// Abstract class Shape
+abstract class Shape {
+    abstract double area();
+}
+
+// Circle class extending Shape
+class Circle extends Shape {
+    double radius;
+    
+    Circle(double radius) {
+        this.radius = radius;
+    }
+
+    double area() {
+        return 3.14 * radius * radius;
+    }
+}
+
+// Rectangle class extending Shape
+class Rectangle extends Shape {
+    double length, width;
+
+    Rectangle(double length, double width) {
+        this.length = length;
+        this.width = width;
+    }
+
+    double area() {
+        return length * width;
+    }
+}
+
+// Triangle class extending Shape
+class Triangle extends Shape {
+    double height, base;
+
+    Triangle(double height, double base) {
+        this.height = height;
+        this.base = base;
+    }
+
+    double area() {
+        return 0.5 * height * base;
+    }
+}
+
+// Square class extending Shape
+class Square extends Shape {
+    double side;
+
+    Square(double side) {
+        this.side = side;
+    }
+
+    double area() {
+        return side * side;
+    }
+}
+
+// Main class
+public class Main {
+    public static void main(String[] args) {
+        // Create instances of shapes
+        Circle c = new Circle(2);
+        Rectangle r = new Rectangle(3, 4);
+        Triangle t = new Triangle(4, 5);
+        Square s = new Square(5);
+
+        // Print the areas of the shapes
+        System.out.println("Area of Circle: " + c.area());
+        System.out.println("Area of Rectangle: " + r.area());
+        System.out.println("Area of Triangle: " + t.area());
+        System.out.println("Area of Square: " + s.area());
+    }
+}
