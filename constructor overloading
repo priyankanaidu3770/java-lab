@@ -1,0 +1,32 @@
+ import java.util.*;
+       class Student{
+         String name;
+         int rollno;
+         String branch;
+         char section;
+         Student(){
+            name="Ravi";
+            rollno=35;
+            branch="CSE";
+            section='C';
+         }
+         Student(String s,int n, String b,char sec){
+            name=s;
+            rollno=n;
+            branch=b;
+            sec=section;
+         }
+         public static void main(String args[]){
+           Student s=new Student();
+           Student s1=new Student("anu",34,"ECE",'D');
+           System.out.println("Name of student:"+(s.name));
+           System.out.println("Roll no:"+(s.rollno));
+           System.out.println("Branch:"+(s.branch));
+           System.out.println("Section:"+(s.section));
+           System.out.println("Name of student:"+(s1.name));
+           System.out.println("Roll no:"+(s.rollno));
+           System.out.println("Branch:"+(s.branch));
+           System.out.println("Section:"+(s.section));
+         }
+       }                                                                                                                                              
+                                                                                                                                                                                                       
